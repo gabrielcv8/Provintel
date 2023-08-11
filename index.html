@@ -6,7 +6,7 @@
     <title>Provintel</title>
 </head>
 <body>
-    <h1>Toma de Datos</h1>
+    <h1>PROVINTEL: Toma de Datos</h1>
     <h3>1. Nombres y Apellidos (verificarlo con paises)</h3>
     <input type="text" size="50">
     <h3>2. DNI (termina con una letra), NIE (empieza y termina con una letra), NIF (empieza con una letra)</h3>
@@ -17,16 +17,19 @@
     <h3>3. Fecha de Nacimiento</h3>
     <input type="text">
     <h3>4. Dirección (reafirmar dirección, con calle y todo)</h3>
+    <p>Donde será la instalación</p>
     <input type="text" size="50">
     <h5>Código postal (son 5 dígitos)</h5>
     <p>Hacer énfasis en su ubicación, para saber si tiene cobertura y si admite a la oferta.</p>
     <input type="text" id="numero" maxlength="5"/>
     <h3>5. Número a portar fijo</h3>
+    <p>¿Tú eres el titular de la línea? (¿las facturas van a su nombre?)</p>
     <p>El número inicia con 9 u 8 (9 dígitos)</p>
     <input type="text" id="numero" maxlength="12" oninput="formatearNumero(this)" placeholder="En caso de que tenga 1 fijo"/><br>
     <input type="text" id="numero" maxlength="12" oninput="formatearNumero(this)" placeholder="En caso de que tenga 2 fijos"/><br>
     <input type="text" id="numero" maxlength="12" oninput="formatearNumero(this)" placeholder="En caso de que tenga 3 fijos"/>
     <h3>6. Número a movil a portar</h3>
+    <p>Preguntar si las líneas son de recarga o de contrato. En el caso de que fueran de recarga pedir ICC (son 19 dígitos detrás de la tarjeta)</p>
     <p>El número inicia con 6 o 7 (9 dígitos). Preguntar: ¿En qué compañía estás?</p>
     <input type="text" placeholder="Nombre Compañía"><br><br>
     <input type="text" id="numero" maxlength="12" oninput="formatearNumero(this)" placeholder="En caso de que tenga 1 movil"/><br>
@@ -47,7 +50,6 @@
     <input type="text" id="codigo" maxlength="28" oninput="formatearCodigo(this)" placeholder="ES21-0000-0000-00-0000000000" size="28"/>
     <input type="text" size="50" maxlength="28" placeholder="Para probar la cuenta bancaria, usa tus propios guiones"/><br><br><br>
     <textarea name="" id="" cols="30" rows="10" placeholder="Usalo como block de notas"></textarea><br><br><br>
-
 
     <script src="./main.js"></script>
 </body>
